@@ -193,6 +193,10 @@ header {
     z-index: 1000;
 }
 
+.nav-toggle:focus {
+	outline: none;
+}
+
 .nav-open .nav {
     transform: translateX(0);
 }
