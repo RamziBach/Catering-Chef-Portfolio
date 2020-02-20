@@ -142,6 +142,7 @@ header {
 
 .logo {
     max-width: 3em;
+	visibility: hidden;
 }
 
 .nav {
@@ -205,13 +206,12 @@ header {
 }
 
 .nav-open .hamburger::before {
-    transform: rotate(90deg) translateX(-6px);
+    transform: rotate(90deg) translateX(-12px);
 }
 
 .nav-open .hamburger::after {
     opacity: 0;
 }
-
 
 
 
@@ -241,8 +241,8 @@ header {
     right: 0;
 }
 
-.hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px; }
+.hamburger::before { top: 12px; }
+.hamburger::after { bottom: 12px; }
 
 
 /*  Intro section  */
@@ -419,6 +419,15 @@ header {
 
 
 
+/* Contact */
+
+.contact {
+	text-align: center;
+}
+
+
+
+
 /* footer */
 
 .footer {
@@ -440,8 +449,10 @@ header {
 	transition: all 0.3s;
 }
 
-.footer__link:hover {
+.footer__link:hover,
+.social-list__link:hover {
 	color: var(--clr-accent);
+    opacity: .7;
 }
 
 .social-list {
@@ -458,6 +469,7 @@ header {
 
 .social-list__link {
     padding: .5em;
+	transition: all 0.3s;
 }
 
 .ramzi {
