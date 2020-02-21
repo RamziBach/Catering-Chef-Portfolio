@@ -6,14 +6,25 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="animate.css">
 	<link rel="stylesheet" href="style.css">
 	<title>Tristan Chartrand | Chef à domicile</title>
 	<script src="https://kit.fontawesome.com/cea17b0653.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
-		<div class="logo">
-			<a href="#home"><img src="img/chef.svg" alt=""></a>
+		<div class="header-container">
+			<div class="left-ul animated bounceInDown slow">
+				<a class="header-nav" href="#services">Services</a>
+				<a class="header-nav" href="#about">A Propos</a>
+			</div>
+			<div class="logo animated bounceInDown slow ">
+				<a href="#home"><img src="img/chef.svg" alt=""></a>
+			</div>
+			<div class="left-ul animated bounceInDown slow">
+				<a class="header-nav" href="#contact">Me Rejoindre</a>
+				<a class="header-nav" href="#work">Photos</a>
+			</div>
 		</div>
 		<button class="nav-toggle" aria-label="toggle navigation">
 			<span class="hamburger"></span>
@@ -22,8 +33,8 @@
 			<ul class="nav__list">
 				<li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
 				<li class="nav__item"><a href="#about" class="nav__link">A Propos</a></li>
-				<li class="nav__item"><a href="#work" class="nav__link">Photos</a></li>
 				<li class="nav__item"><a href="#contact" class="nav__link">Me Rejoindre</a></li>
+				<li class="nav__item"><a href="#work" class="nav__link">Photos</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -33,7 +44,7 @@
 		<h1 class="section__title section__title--intro">
 			Tristan<strong>Chartrand</strong>
 		</h1>
-		<p class="section__subtitle section__subtitle--intro">Chef à domicile</p>
+		<p class="section__subtitle section__subtitle--intro">Chef À Domicile</p>
 		<img src="img/trist.jpg" alt="a picture of Jane Smith smiling" class="intro__img">
 	</section>
 
@@ -44,7 +55,7 @@
 		<div class="services">
 			<div class="service">
 				<h3>Chef à domicile</h3>
-				<p>Organisez votre prochain événement avec un chef à domicile! Repas multi-plats, buffets de style familial ou plateaux canapés professionnellement fait dans le confort de votre propre maison. Après une consultation, je travaillerai en étroite collaboration avec vous pour concevoir un menu sur mesure pour votre soirée. Je m’occuperai de l’épicerie, de la préparation des repas et du nettoyage de la cuisine après le dîner. Communiquez avec moi pour obtenir un devis personnalisé!</p>
+				<p>Organisez votre prochaine soirée avec un chef à domicile! Repas multi-plats, buffets de style familial ou plateaux canapés professionnellement fait dans le confort de votre propre maison. Après une consultation, je travaillerai en étroite collaboration avec vous pour concevoir un menu sur mesure pour votre événement. Je m’occuperai de l’épicerie, de la préparation des repas et du nettoyage de la cuisine après le dîner. Communiquez avec moi pour obtenir un devis personnalisé!</p>
 			</div> <!-- / service -->
 
 			<!--<div class="service">
@@ -73,6 +84,17 @@
 	   </div>
 
 	   <img src="img/trist2.jpg" alt="Jane leaning against a bus" class="about-me__img">
+	</section>
+	
+	
+	<!-- Contact -->
+	<section class="contact" id="contact">
+		<h2 class="section__title section__title--work">Me Rejoindre</h2>
+		<p class="section__subtitle section__subtitle--work">(514) 773-2242</p>
+		<div class="service">
+			<p>Si vous avez des questions ou des commentaires, ou si vous souhaitez me contacter pour un devis, s’il vous plaît envoyer moi un courriel et je vous répondrez dès que possible.</p>
+		</div>
+		<a href="mailto:tristanchartrand@outlook.com" class="btn btn__contact">Email-moi <i class="fas fa-paper-plane"></i></a>
 	</section>
 
 	<!-- My Work -->
@@ -118,45 +140,51 @@
 				<img src="img/12.jpg" alt="" class="portfolio__img">
 		</div>
 	</section>
-	
-	
-	<!-- Contact Section -->
-	<section class="contact" id="contact">
-		<h2 class="section__title section__title--work">Me Rejoindre</h2>
-		<p class="section__subtitle section__subtitle--work">(514) 773-2242</p>
-		<a href="mailto:tristanchartrand@outlook.com" class="btn">Email-moi <i class="fas fa-paper-plane"></i></a>
-	</section>
 
 
 	<!-- Footer -->
 	<footer class="footer">
-		<a href="mailto:tristanchartrand@outlook.com" class="footer__link">tristanchartrand@outlook.com</a>
-		<ul class="social-list">
-			<li class="social-list__item">
-				<a class="social-list__link" href="https://www.facebook.com/tristan.chartrand.1" target="_blank">
-					<i class="fab fa-facebook"></i>
-				</a>
-			</li>
-			<li class="social-list__item">
-				<a class="social-list__link" href="https://gramho.com/profile/tristanc505/7405393351" target="_blank">
-					<i class="fab fa-instagram"></i>
-				</a>
-			</li>
-			<!--<li class="social-list__item">
-				<a class="social-list__link" href="https://twitter.com">
-					<i class="fab fa-twitter"></i>
-				</a>
-			</li>
-			<li class="social-list__item">
-				<a class="social-list__link" href="https://github.com">
-					<i class="fab fa-github"></i>
-				</a>
-			</li>-->
-		</ul>
-		<!--<p class="ramzi">a &lt;r.b /&gt; website</p>-->
+		<div class="footer-container">
+			<!--<a href="mailto:tristanchartrand@outlook.com" class="footer__link">tristanchartrand@outlook.com</a>-->
+			<ul class="nav__list-footer">
+				<li class="nav__item-footer"><a href="#services" class="nav__link-footer">Services</a></li>
+				<li class="nav__item-footer"><a href="#about" class="nav__link-footer">A Propos</a></li>
+				<li class="nav__item-footer"><a href="#contact" class="nav__link-footer">Me Rejoindre</a></li>
+				<li class="nav__item-footer"><a href="#work" class="nav__link-footer">Photos</a></li>
+			</ul>
+			<ul class="social-list">
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://www.facebook.com/tristan.chartrand.1" target="_blank">
+						<i class="fab fa-facebook"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://gramho.com/profile/tristanc505/7405393351" target="_blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+				<!--<li class="social-list__item">
+					<a class="social-list__link" href="https://twitter.com">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://github.com">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>-->
+			</ul>
+			<p class="ramzi">a &lt;r.b /&gt; website<br>Tous droits réservés 2020 &copy;</p>
+		</div>
 	</footer>
 	
 	
+	
+	<button onclick="topFunction()" id="myBtn" class="myBtnClass animated bounceInUp" title="Go to top"><img class="topClass" src="img/up-arrow-white.svg"></button>
+	
+	
+	
+	<script src="sticky.js"></script>
 	<script src="script.js"></script>
 </body>
 </html>
