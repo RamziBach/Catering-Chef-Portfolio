@@ -457,7 +457,14 @@ header {
 .my-work {
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    text-align: center;    
+    text-align: center;
+}
+
+@media (min-width: 635px) {
+	.my-work {
+		width: 80%;
+		margin: 0 auto;
+	}
 }
 
 .portfolio {
@@ -599,4 +606,10 @@ header {
 
 #myBtn:hover {
 	background-color: rgba(224, 169, 109, 0.1);
+}
+
+@media (max-width: 634px) {
+	#myBtn {
+		visibility: hidden;
+	}
 }
